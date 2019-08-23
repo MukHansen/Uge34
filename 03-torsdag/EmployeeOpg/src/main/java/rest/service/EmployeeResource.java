@@ -6,6 +6,7 @@ import facades.EmployeeFacade;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -20,7 +21,7 @@ import javax.ws.rs.core.MediaType;
 @Path("employee")
 public class EmployeeResource {
 
-    private EntityManagerFactory emf;
+    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu");
     private EmployeeFacade facade = EmployeeFacade.getEmployeeFacade(emf);
     private static Gson gson = new Gson();
     
@@ -30,15 +31,15 @@ public class EmployeeResource {
         return "{\"msg\":\"succes\"}";
     }
 
-    @Path("all")
     @GET
+    @Path("all")
     @Produces({MediaType.APPLICATION_JSON})
     public String getAllCustomers() {
         List<Employee> employee = facade.getAllEmployees();
         return gson.toJson(employee);
     }
-    @Path("highestPaidEmp")
     @GET
+    @Path("highestPaidEmp")
     @Produces({MediaType.APPLICATION_JSON})
     public String getHighestPaidEmployee() {
         return gson.toJson(facade.getEmployeesWithHighestSalary());
