@@ -1,6 +1,8 @@
 
 
 Tirsdag:
+Mangler sidste exercise(Tests(Thomas sagde de ikke var nødvendige)).
+
 Redegøre for ORM frameworks generelt og deres pros/cons
 
 Redegøre for forskellen mellem JPA og andre persistensmetoder
@@ -16,6 +18,8 @@ Demonstrere Insert og Select
 
 
 Onsdag:
+All done, bortset fra problemer med output i exercise 4.
+
 Redegøre for begrebet Restfull webservices
 
 Redegøre for konventioner ved opbygning af REST api'er
@@ -30,6 +34,8 @@ Redegøre for, og demonstrere det udleverede start project til brug for JPA/REST-
 
 
 Torsdag:
+Exersice 1+2 all done, problemer med server i exercise 3 punkt 2, derfor heller ikke deployed(Exercise 4).
+
 Designe simple GET-endpoints med brug af en underliggende database tilgået via JPA
 
 Kunne redegøre for nødvendigheden af i brug af JSON
@@ -42,3 +48,4 @@ Kunne konvertere frem og tilbage mellem Java objekter og JSON i egen kode
 
 
 Fredag:
+All Done, med undtagelse af punkt 9(Tests)
