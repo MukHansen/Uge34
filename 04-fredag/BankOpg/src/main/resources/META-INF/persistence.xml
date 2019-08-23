@@ -5,7 +5,7 @@
     <class>entities.RenameMe</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/jpa_rest_demo1"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/bankDB"/>
       <property name="javax.persistence.jdbc.user" value="dev"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
       <property name="javax.persistence.jdbc.password" value="ax2"/>

@@ -22,12 +22,12 @@ public class EmployeeFacade {
 
     /**
      *
-     * @param _emf
+     * @param emf
      * @return an instance of this facade class.
      */
-    public static EmployeeFacade getFacadeExample(EntityManagerFactory _emf) {
+    public static EmployeeFacade getEmployeeFacade(EntityManagerFactory emf) {
         if (instance == null) {
-            emf = _emf;
+            emf = emf;
             instance = new EmployeeFacade();
         }
         return instance;

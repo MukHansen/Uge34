@@ -21,7 +21,7 @@ import javax.ws.rs.core.MediaType;
 public class EmployeeResource {
 
     private EntityManagerFactory emf;
-    private EmployeeFacade facade = EmployeeFacade.getFacadeExample(emf);
+    private EmployeeFacade facade = EmployeeFacade.getEmployeeFacade(emf);
     private static Gson gson = new Gson();
     
     @GET
